@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marthe Odonelle Njoya — Portfolio</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+<canvas id="tech-bg"></canvas>
+
+<div class="page">
+
+  <nav>
+    <div class="nav-logo">Marthe<em>.</em>Njoya</div>
+    <div class="nav-links">
+      <a href="#about" data-t="nav_about">About</a>
+      <a href="#skills" data-t="nav_skills">Skills</a>
+      <a href="#projects" data-t="nav_projects">Projects</a>
+      <a href="#experience" data-t="nav_experience">Experience</a>
+      <a href="#education" data-t="nav_education">Education</a>
+    <a href="Mystory.html" data-t="nav_MyStory">My Story</a>
+      <a href="#contact" data-t="nav_contact">Contact</a>
+
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en', this)">EN</button>
+        <button class="lang-btn" onclick="setLang('fr', this)">FR</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <div class="hero-greeting" data-t="hero_greeting">Hello, I'm</div>
+      <div class="hero-name">Marthe Odonelle<br><span>Njoya</span></div>
+      <div class="hero-title" data-t="hero_title">IT Professional · Web Developer · UI/UX Designer</div>
+
+      <p class="hero-bio" data-t="hero_bio">
+       A results-driven, bilingual (EN/FR) IT professional combining technical support expertise with front-end development and UI/UX skills. Dedicated to bridging the gap between technology and people by building clean, functional, and accessible digital experiences. Actively seeking impactful roles in IT Support, Web Development, or UI/UX Design.
+      </p>
+
+      <div class="hero-contacts">
+        <span class="hero-contact-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span data-t="hero_location">St. Paul, MN</span>
+        </span>
+
+        <span class="hero-contact-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.2 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l.62-1.28a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.9z"></path>
+          </svg>
+          <a href="tel:+16513479485">(651) 347-9485</a>
+        </span>
+
+        <span class="hero-contact-item">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:odonellenjoya83@gmail.com">odonellenjoya83@gmail.com</a>
+        </span>
+      </div>
+
+      <div class="hero-badges">
+        <span class="badge badge-sky" data-t="hero_badge_webdev">Web Development</span>
+        <span class="badge badge-sky" data-t="hero_badge_frontend">Front-end</span>
+        <span class="badge badge-pink" data-t="hero_badge_uiux">UI/UX Design</span>
+        <span class="badge badge-gray" data-t="hero_badge_itsupport">IT Support</span>
+        <span class="badge badge-gray" data-t="hero_badge_automate">Power Automate</span>
+        <span class="badge badge-gray" data-t="hero_badge_bilingual">EN / FR</span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary" data-t="hero_btn_projects">View Projects</a>
+          <a href="Pictures/Mysefl/Martha_Resume_2026updated.pdf"  class="btn btn-outline"target="_blank"download>My Resume</a>
+        <a href="https://metrostate.joinhandshake.com/profiles/martheodonelle" target="_blank" class="btn btn-pink" data-t="hero_btn_handshake">Handshake</a>
+      </div>
+    </div>
+
+    <div class="photo-wrap">
+      <div class="photo-ring1"></div>
+      <div class="photo-ring2"></div>
+
+      <div class="photo-circle" title="Profile photo">
+        <div id="photo-display">
+          <img src="Pictures/potfoliopic.jpg" alt="Marthe Odonelle Njoya">
+        </div>
+
+        <div class="photo-overlay">
+          <div class="photo-overlay-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+          </div>
+          <div class="photo-overlay-text">Profile Photo</div>
+        </div>
+      </div>
+
+      <div class="status-indicator">
+        <div class="status-dot"></div>
+        <div class="status-text" data-t="hero_status">Available</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="featured">
+    <div class="sec-label" data-t="featured_label">Featured project</div>
+    <div class="sec-title" data-t="featured_title">Flagship work</div>
+
+    <div class="featured-card">
+      <div class="feat-content">
+        <div class="feat-badge" data-t="featured_badge">★ Featured</div>
+        <div class="feat-title" data-t="featured_project_title">EduLion Platform</div>
+        <p class="feat-desc" data-t="featured_desc">
+         EduLion is a comprehensive, bilingual education platform built to modernize school management across Cameroon and Africa. From elementary to university level, it centralizes tuition payments, student records, grade tracking, and parent communication giving schools, teachers, parents, and students one powerful platform to manage academic life.
+        </p>
+
+        <div class="feat-tags">
+          <span class="tag tag-sky">PHP</span>
+          <span class="tag tag-sky">MySQL</span>
+          <span class="tag tag-sky">HTML/CSS</span>
+          <span class="tag tag-sky">Role-based Auth</span>
+          <span class="tag tag-sky">Payment System</span>
+          <span class="tag tag-sky">Academic Management</span>
+          <span class="tag tag-sky">Python</span>
+          <span class="tag tag-sky">JavaScript</span>
+        </div>
+
+        <div class="feat-btns">
+          <a href="#projects" class="btn btn-primary btn-sm" data-t="featured_btn_view">View Project</a>
+          <a href="https://github.com/Odonelle2001" class="btn btn-outline btn-sm" data-t="featured_btn_github">GitHub</a>
+          <a href="#projects" class="btn btn-pink btn-sm" data-t="featured_btn_screenshots">Screenshots</a>
+        </div>
+      </div>
+
+      <div class="feat-stats">
+        <div class="feat-stat">
+          <div class="feat-stat-num" data-t="featured_stat1_num">4+</div>
+          <div class="feat-stat-lbl" data-t="featured_stat1_lbl">User Roles</div>
+        </div>
+        <div class="feat-stat">
+          <div class="feat-stat-num" data-t="featured_stat2_num">3</div>
+          <div class="feat-stat-lbl" data-t="featured_stat2_lbl">Modules</div>
+        </div>
+        <div class="feat-stat">
+          <div class="feat-stat-num" data-t="featured_stat3_num">2</div>
+          <div class="feat-stat-lbl" data-t="featured_stat3_lbl">Languages</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vision-card">
+      <div class="vision-title">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 8v4l3 3"></path>
+        </svg>
+        <span data-t="vision_title">What I'm building — the vision</span>
+      </div>
+      <p class="vision-body" data-t="vision_body">
+        I am developing EduLion to modernize school operations by providing simple, reliable digital tools tailored to local needs. The platform aims to streamline payment tracking, improve communication between schools and families, and support academic management through structured, role-based systems.
+This project reflects my commitment to building technology that solves real-world problems and creates meaningful impact in underserved communities.
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="about">
+    <div class="sec-label" data-t="about_label">About me</div>
+    <div class="sec-title" data-t="about_title">Who I am</div>
+    <p class="about-bio" data-t="about_bio">
+      I am a bilingual (English/French) IT professional with a strong foundation in technical support, web development, and user-focused design. I combine hands-on troubleshooting experience with front-end development skills to build practical and efficient digital solutions.
+My background includes supporting users, resolving system issues, and developing web-based applications, which allows me to understand both the technical and human side of technology.
+I am passionate about using technology to solve real-world problems, particularly in communities where access to efficient digital tools can make a meaningful difference.
+    </p>
+
+    <div class="about-grid">
+      <div class="card about-card"><div class="about-card-title" data-t="about_card1_title">Location</div><div class="about-card-val" data-t="about_card1_val">St. Paul, MN, USA</div></div>
+      <div class="card about-card"><div class="about-card-title" data-t="about_card2_title">Languages</div><div class="about-card-val" data-t="about_card2_val">English · French (bilingual)</div></div>
+      <div class="card about-card"><div class="about-card-title" data-t="about_card3_title">Currently</div><div class="about-card-val" data-t="about_card3_val">IT/Helpdesk Intern at MN Children's Museum</div></div>
+      <div class="card about-card"><div class="about-card-title" data-t="about_card4_title">Open to</div><div class="about-card-val" data-t="about_card4_val">IT Support · Web Dev · Front-end · UI/UX</div></div>
+      <div class="card about-card"><div class="about-card-title" data-t="about_card5_title">Education</div><div class="about-card-val" data-t="about_card5_val">B.S. CIT Metro State · A.A.S. Century College</div></div>
+      <div class="card about-card"><div class="about-card-title" data-t="about_card6_title">Honors</div><div class="about-card-val" data-t="about_card6_val">Phi Theta Kappa · 96% helpdesk satisfaction</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="skills">
+    <div class="sec-label" data-t="skills_label">Skills</div>
+    <div class="sec-title" data-t="skills_title">Technologies &amp; tools</div>
+
+    <div class="skills-grid">
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-sky"><span class="skill-dot sd-sky"></span><span data-t="skill_languages">Languages</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">PHP</span><span class="tag tag-dark">JavaScript</span><span class="tag tag-dark">SQL</span><span class="tag tag-dark">HTML</span><span class="tag tag-dark">CSS</span><span class="tag tag-dark">XHTML</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-sky"><span class="skill-dot sd-sky"></span><span data-t="skill_frontend">Frontend</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">HTML/CSS</span><span class="tag tag-dark">Bootstrap</span><span class="tag tag-dark">Responsive Design</span><span class="tag tag-dark">UI Layout</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-sky"><span class="skill-dot sd-sky"></span><span data-t="skill_backend">Backend</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">PHP (PDO)</span><span class="tag tag-dark">MySQL</span><span class="tag tag-dark">MS Exchange</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-pink"><span class="skill-dot sd-pink"></span><span data-t="skill_design">Design &amp; UX</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">Moqups</span><span class="tag tag-dark">draw.io</span><span class="tag tag-dark">Figma</span><span class="tag tag-dark">Wireframes</span><span class="tag tag-dark">UML</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-pink"><span class="skill-dot sd-pink"></span><span data-t="skill_tools">Tools &amp; Automation</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">VS Code</span><span class="tag tag-dark">GitHub</span><span class="tag tag-dark">Power Automate</span><span class="tag tag-dark">Eclipse</span><span class="tag tag-dark">XAMPP</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-sky"><span class="skill-dot sd-sky"></span><span data-t="skill_it">IT &amp; Hardware</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">Windows/Linux</span><span class="tag tag-dark">PC Setup</span><span class="tag tag-dark">Routers/Switches</span><span class="tag tag-dark">Troubleshooting</span><span class="tag tag-dark">Cisco Basics</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-sky"><span class="skill-dot sd-sky"></span><span data-t="skill_ai">AI Tools</span></div>
+        <div class="skill-tags"><span class="tag tag-dark">ChatGPT</span><span class="tag tag-dark">Claude</span><span class="tag tag-dark">GitHub Copilot</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-pink"><span class="skill-dot sd-pink"></span><span data-t="skill_certs">Certifications</span></div>
+        <div class="skill-tags"><span class="tag tag-dark" data-t="skill_cert1">Google IT Support (in progress)</span><span class="tag tag-dark" data-t="skill_cert2">Web Dev Certificate (in progress)</span></div>
+      </div>
+      <div class="card skill-group">
+        <div class="skill-group-title sgt-pink"><span class="skill-dot sd-pink"></span><span data-t="skill_soft">Soft Skills</span></div>
+        <div class="skill-tags"><span class="tag tag-dark" data-t="skill_soft1">Bilingual EN/FR</span><span class="tag tag-dark" data-t="skill_soft2">Technical writing</span><span class="tag tag-dark" data-t="skill_soft3">Team training</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="projects">
+    <div class="projects-header">
+      <div>
+        <div class="sec-label" data-t="projects_label">Projects</div>
+        <div class="sec-title" style="margin-bottom:0" data-t="projects_title">What I've built</div>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- TEAMUP -->
+      <div class="project-card">
+        <div class="project-gallery" id="gallery-0">
+          <div class="gallery-track" id="track-0"></div>
+          <button class="gallery-nav-btn prev" onclick="slideGallery(0,-1)">&#8249;</button>
+          <button class="gallery-nav-btn next" onclick="slideGallery(0,1)">&#8250;</button>
+          <div class="gallery-dots" id="dots-0"></div>
+          <div class="gallery-count" id="count-0"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name" data-t="project1_name">TeamUp Collaboration Platform</div>
+          <p class="project-desc" data-t="project1_desc">
+            Student and instructor dashboards, onboarding flows, PHP/MySQL backend for profiles, availability, and team assignment. Includes wireframes and UML documentation.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sky">PHP</span>
+            <span class="tag tag-sky">MySQL</span>
+            <span class="tag tag-sky">HTML/CSS</span>
+            <span class="tag tag-sky">UML</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Odonelle2001/TeamUP-Project" target="_blank" class="btn btn-ghost btn-sm" data-t="project_btn_github">GitHub</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- CAMPUS TRADE -->
+      <div class="project-card">
+        <div class="project-gallery" id="gallery-1">
+          <div class="gallery-track" id="track-1"></div>
+          <button class="gallery-nav-btn prev" onclick="slideGallery(1,-1)">&#8249;</button>
+          <button class="gallery-nav-btn next" onclick="slideGallery(1,1)">&#8250;</button>
+          <div class="gallery-dots" id="dots-1"></div>
+          <div class="gallery-count" id="count-1"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name" data-t="project2_name">Campus Trade Marketplace</div>
+          <p class="project-desc" data-t="project2_desc">
+            Full marketplace with Buyer, Seller, Admin and Feed views. CSS styling, search filters, book tile UI, PHP/MySQL logic for user accounts and listings with team GitHub workflow.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sky">PHP</span>
+            <span class="tag tag-sky">MySQL</span>
+            <span class="tag tag-sky">CSS</span>
+            <span class="tag tag-sky">GitHub</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Odonelle2001/CampusTradeTTT" target="_blank" class="btn btn-ghost btn-sm" data-t="project_btn_github">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDULION -->
+      <div class="project-card">
+        <div class="project-gallery" id="gallery-2">
+          <div class="gallery-track" id="track-2"></div>
+          <button class="gallery-nav-btn prev" onclick="slideGallery(2,-1)">&#8249;</button>
+          <button class="gallery-nav-btn next" onclick="slideGallery(2,1)">&#8250;</button>
+          <div class="gallery-dots" id="dots-2"></div>
+          <div class="gallery-count" id="count-2"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name" data-t="project4_name">EduLion Platform</div>
+          <p class="project-desc" data-t="project4_desc">
+            Bilingual school management system for Cameroon. Academic year management, payment systems, and role-based dashboards for admins, teachers, and students.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sky">PHP</span>
+            <span class="tag tag-sky">MySQL</span>
+            <span class="tag tag-sky">HTML/CSS</span>
+            <span class="tag tag-sky">Bilingual</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/odonellenjoya83-afk/EDULION" class="btn btn-ghost btn-sm" data-t="project_btn_github">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CULTURE UPGRADE -->
+      <div class="project-card">
+        <div class="project-gallery" id="gallery-3">
+          <div class="gallery-track" id="track-3"></div>
+          <button class="gallery-nav-btn prev" onclick="slideGallery(3,-1)">&#8249;</button>
+          <button class="gallery-nav-btn next" onclick="slideGallery(3,1)">&#8250;</button>
+          <div class="gallery-dots" id="dots-3"></div>
+          <div class="gallery-count" id="count-3"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Culture Upgrade Website</div>
+          <p class="project-desc">
+            Professor-assigned website project where I added the filtering section so users can filter and find dresses, and I created the individual dress card so when a user selects a dress they can see all the information.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sky">PHP</span>
+            <span class="tag tag-sky">MySQL</span>
+            <span class="tag tag-sky">Filtering</span>
+            <span class="tag tag-sky">UI Cards</span>
+          </div>
+          <div class="project-links">  
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="experience">
+    <div class="sec-label" data-t="exp_label">Experience</div>
+    <div class="sec-title" data-t="exp_title">Where I've worked</div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-role" data-t="exp1_role">IT / Helpdesk Support Intern</div>
+        <div class="tl-org" data-t="exp1_org">Minnesota Children's Museum · St. Paul, MN</div>
+        <div class="tl-date" data-t="exp1_date">January 2025 – Present</div>
+        <ul class="tl-list">
+        <li data-t="exp1_b1">Troubleshoot hardware, software, touchscreen exhibits, network connectivity, and Cisco-based infrastructure across the facility</li>
+<li data-t="exp1_b2">Built and deployed an automated inventory tracking system using Power Automate to streamline resource reporting between IT and the finance department</li>
+<li data-t="exp1_b3">Installed and configured operating systems on legacy devices, extending hardware lifespan and reducing equipment costs</li>
+<li data-t="exp1_b4">Mapped and documented all networked devices throughout the building to improve IT visibility and response time</li>
+<li data-t="exp1_b5">Remotely accessed and resolved staff workstation issues, minimizing downtime and disruption to daily operations</li>
+<li data-t="exp1_b6">Managed and resolved helpdesk tickets, maintaining organized records and following up to ensure full resolution</li>
+<li data-t="exp1_b7">Designed clear, visually accessible instructional posters to guide non-technical staff through common IT procedures</li>
+<li data-t="exp1_b8">Built and tested virtual machines for system configuration, software testing, and IT training purposes</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-dot tl-dot-pink"></div>
+        <div class="tl-role" data-t="exp2_role">Technology Coordinator</div>
+        <div class="tl-org" data-t="exp2_org">ACR Homes</div>
+        <div class="tl-date" data-t="exp2_date">October 2024 – March 2025</div>
+        <ul class="tl-list">
+          <li data-t="exp2_b1">Built automated workflows using Power Automate, Forms, and Excel</li>
+          <li data-t="exp2_b2">Designed user-friendly reporting dashboards for staff</li>
+          <li data-t="exp2_b3">Trained caregivers and collaborated with IT to unify tools across the organization</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-role" data-t="exp3_role">IT Intern</div>
+        <div class="tl-org" data-t="exp3_org">Century College · White Bear Lake, MN</div>
+        <div class="tl-date" data-t="exp3_date">June 2022 – August 2022</div>
+        <ul class="tl-list">
+          <li data-t="exp3_b1">Built and repaired workstations, installed Windows and Linux systems</li>
+          <li data-t="exp3_b2">Assisted with software navigation and network connectivity issues</li>
+          <li data-t="exp3_b3">Earned 96% positive feedback from end users</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="education">
+    <div class="sec-label" data-t="edu_label">Education</div>
+    <div class="sec-title" data-t="edu_title">Academic background</div>
+
+    <div class="card edu-card">
+      <div class="edu-icon edu-icon-sky">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+          <path d="M2 17l10 5 10-5"></path>
+          <path d="M2 12l10 5 10-5"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="edu-degree" data-t="edu1_degree">B.S. Computer Information Technology</div>
+        <div class="edu-school" data-t="edu1_school">Metropolitan State University</div>
+        <div class="edu-date" data-t="edu1_date">Graduated December 2025</div>
+      </div>
+    </div>
+
+    <div class="card edu-card">
+      <div class="edu-icon edu-icon-pink">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+          <path d="M9 12l2 2 4-4"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="edu-degree" data-t="edu2_degree">A.A.S. Computer Technology Support &amp; Administration</div>
+        <div class="edu-school" data-t="edu2_school">Century College</div>
+        <div class="edu-date" data-t="edu2_date">May 2023 · GPA 3.70</div>
+        <div class="badge badge-honor" data-t="edu2_honor" style="margin-top:6px">Phi Theta Kappa Honor Society</div>
+      </div>
+    </div>
+
+    <div class="card edu-card">
+      <div class="edu-icon edu-icon-sky">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 8v4l3 3"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="edu-degree" data-t="edu3_degree">Certifications in Progress</div>
+        <div class="edu-school" data-t="edu3_school">Google IT Support Professional Certificate</div>
+        <div class="edu-date" data-t="edu3_date">Web Development Certificate — In Progress</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section fade-in" id="contact">
+    <div class="sec-label" data-t="contact_label">Contact</div>
+    <div class="sec-title" data-t="contact_title">Let's connect</div>
+    <p class="contact-subtitle" data-t="contact_subtitle">Click any card below — email opens Gmail directly, phone opens your dialer.</p>
+
+    <div class="contact-main">
+      <a class="contact-card" href="mailto:odonellenjoya83@gmail.com">
+        <div class="contact-icon ci-sky">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label" data-t="contact_email_label">Email</div>
+          <div class="contact-val">odonellenjoya83@gmail.com</div>
+          <div class="contact-action ca-sky" data-t="contact_email_action">Opens Gmail directly ↗</div>
+        </div>
+        <div class="contact-arrow">&#8599;</div>
+      </a>
+
+      <a class="contact-card" href="tel:+16513479485">
+        <div class="contact-icon ci-pink">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.2 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l.62-1.28a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.9z"></path>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label" data-t="contact_phone_label">Phone</div>
+          <div class="contact-val">(651) 347-9485</div>
+          <div class="contact-action ca-pink" data-t="contact_phone_action">Opens phone dialer ↗</div>
+        </div>
+        <div class="contact-arrow">&#8599;</div>
+      </a>
+    </div>
+
+    <div class="social-row">
+      <a class="social-card" href="https://www.linkedin.com/in/marthe-odonelle-njoya-1014a5173/" target="_blank">
+        <div class="social-icon si-lk">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="1.5">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </div>
+        <div>
+          <div class="social-lbl" data-t="contact_linkedin_label">LinkedIn</div>
+          <div class="social-val">marthe-odonelle-njoya</div>
+        </div>
+      </a>
+
+      <a class="social-card" href="https://github.com/Odonelle2001" target="_blank">
+        <div class="social-icon si-gh">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b949e" stroke-width="1.5">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="social-lbl" data-t="contact_github_label">GitHub</div>
+          <div class="social-val">Odonelle2001</div>
+        </div>
+      </a>
+
+      <a class="social-card" href="https://app.joinhandshake.com/profiles/marthe-odonelle-njoya" target="_blank">
+        <div class="social-icon si-hs">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 010 7.75"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="social-lbl" data-t="contact_handshake_label">Handshake</div>
+          <div class="social-val" data-t="contact_handshake_val">Marthe Odonelle Njoya</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="availability-bar">
+      <div class="avail-dot"></div>
+      <p class="avail-text">
+        <strong data-t="contact_avail">Available for opportunities</strong>
+        <span> — </span>
+        <span data-t="contact_avail_detail">Open to IT Support, Web Development, Front-end, and UI/UX roles. Response within 24 hours.</span>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-text" data-t="footer_text">Designed &amp; built with <span class="footer-heart">♥</span> by Marthe Odonelle Njoya — St. Paul, MN · 2025</p>
+  </footer>
+
+</div>
+
+<script src="translation.js"></script>
+<script>
+(function() {
+  const canvas = document.getElementById('tech-bg');
+  const ctx = canvas.getContext('2d');
+  const syms = ['</>','{}','()','[]','//','&&','||','=>','.css','.php','if()','var','let','const','SQL','git','API','<div>','PHP','HTML','fn()','::','01','10','return','null','true','import','class','async'];
+  let particles = [];
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < 60; i++) {
+    particles.push({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      sym: syms[Math.floor(Math.random() * syms.length)],
+      speed: 0.12 + Math.random() * 0.22,
+      alpha: 0.02 + Math.random() * 0.045,
+      size: 10 + Math.random() * 5,
+      color: Math.random() > 0.55 ? '#7dd3fc' : (Math.random() > 0.5 ? '#f472b6' : '#94a3b8')
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.font = p.size + 'px monospace';
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = p.alpha;
+      ctx.fillText(p.sym, p.x, p.y);
+      p.y += p.speed;
+      if (p.y > canvas.height + 20) {
+        p.y = -20;
+        p.x = Math.random() * canvas.width;
+        p.sym = syms[Math.floor(Math.random() * syms.length)];
+      }
+    });
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+})();
+
+let currentLang = 'en';
+
+function setLang(lang, btn) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.documentElement.lang = lang;
+  applyTranslations();
+}
+
+function applyTranslations() {
+  if (typeof translations === 'undefined') return;
+  const t = translations[currentLang];
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const key = el.getAttribute('data-t');
+    if (t && t[key] !== undefined) el.textContent = t[key];
+  });
+}
+
+/*
+  Each gallery only shows the images actually linked below.
+  So if a project has 2 images, it will only show 2.
+*/
+const galleryState = {
+  0: {
+    current: 0,
+    slides: [
+      "Pictures/Teamupscreenshots/Team up final logo.png",
+      "Pictures/Teamupscreenshots/create acount.jpeg",
+      "Pictures/Teamupscreenshots/Login.jpeg",
+      "Pictures/Teamupscreenshots/password.jpeg",
+      "Pictures/Teamupscreenshots/teampup student.png",
+      "Pictures/Teamupscreenshots/teamup teacher.png",
+      "Pictures/Teamupscreenshots/usecasediagram.png"
+    ]
+  },
+  1: {
+    current: 0,
+    slides: [
+      "Pictures/CampusTradescreenshots/Campus_Trade_Logo.png",
+    "Pictures/CampusTradescreenshots/Homepage.jpeg",
+    "Pictures/CampusTradescreenshots/LoginPage.jpeg",
+    "Pictures/CampusTradescreenshots/signup.jpeg",
+    "Pictures/CampusTradescreenshots/BuyerPage.jpeg",
+    "Pictures/CampusTradescreenshots/Sellerpage.jpeg",
+    "Pictures/CampusTradescreenshots/TTTBuyButton.png",
+    "Pictures/CampusTradescreenshots/CampusFeed.jpeg",
+    "Pictures/CampusTradescreenshots/campus_trade_diagram.png",
+    "Pictures/CampusTradescreenshots/campustradediagram2.png"
+  ]
+  },
+  2: {
+    current: 0,
+    slides: [
+       "Pictures/EdulionScreenshots/EDULIONWhite.png",
+    "Pictures/EdulionScreenshots/home.png",
+    "Pictures/EdulionScreenshots/homepage.jpeg",
+    "Pictures/EdulionScreenshots/generalLogin.jpeg",
+    "Pictures/EdulionScreenshots/StudentPortal.jpeg",
+    "Pictures/EdulionScreenshots/SchoolAdmin.jpeg",
+    "Pictures/EdulionScreenshots/ITAdmin.jpeg",
+    "Pictures/EdulionScreenshots/TeachersPage.jpeg",
+    "Pictures/EdulionScreenshots/teachersubjectPage.jpeg"
+  ]
+  },
+  3: {
+    current: 0,
+    slides: [
+      "Pictures/CultureUpgradeWebsite/DressTab.jpeg",
+      "Pictures/CultureUpgradeWebsite/Individualcard2.jpeg"
+    ]
+  }
+};
+
+function renderGallery(idx) {
+  const state = galleryState[idx];
+  if (!state) return;
+
+  const track = document.getElementById('track-' + idx);
+  const dotsEl = document.getElementById('dots-' + idx);
+  const count = document.getElementById('count-' + idx);
+
+  if (!track || !dotsEl || !count) return;
+
+  track.innerHTML = state.slides.map((src, i) => `
+    <div class="gallery-slide">
+      <img src="${src}" alt="Screenshot ${i + 1}">
+    </div>
+  `).join('');
+
+  track.style.transform = `translateX(-${state.current * 100}%)`;
+
+  dotsEl.innerHTML = state.slides.map((_, i) => `
+    <div class="gallery-dot ${i === state.current ? 'active' : ''}" onclick="goSlide(${idx}, ${i})"></div>
+  `).join('');
+
+  count.textContent = `${state.current + 1} / ${state.slides.length}`;
+}
+
+function slideGallery(idx, dir) {
+  const state = galleryState[idx];
+  if (!state || !state.slides.length) return;
+
+  state.current = (state.current + dir + state.slides.length) % state.slides.length;
+  renderGallery(idx);
+}
+
+function goSlide(idx, slideIndex) {
+  const state = galleryState[idx];
+  if (!state) return;
+
+  state.current = slideIndex;
+  renderGallery(idx);
+}
+
+function startAutoSlides() {
+  Object.keys(galleryState).forEach(key => {
+    const idx = Number(key);
+    setInterval(() => {
+      slideGallery(idx, 1);
+    }, 4000);
+  });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  Object.keys(galleryState).forEach(key => renderGallery(Number(key)));
+  startAutoSlides();
+});
+</script>
+
+</body>
+</html>

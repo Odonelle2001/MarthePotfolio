@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marthe — The Real Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Mystory.css"/>
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="top-nav">
+    <a href="index.html" class="back-btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      <span data-t="nav_back">Back to Portfolio</span>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#photos"  data-t="nav_photos">Photos</a>
+        <a href="#story"   data-t="nav_story">Story</a>
+        <a href="#hobbies" data-t="nav_hobbies">Hobbies</a>
+        <a href="#work"    data-t="nav_work">Work</a>
+        <a href="#travel"  data-t="nav_travel">Travel</a>
+        <a href="#facts"   data-t="nav_facts">Facts</a>
+      </div>
+      <div class="lang-row">
+        <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
+        <button class="lang-btn" onclick="setLang('fr',this)">FR</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ ONE BIG CARD ═══ -->
+  <div class="big-card">
+
+    <!-- ── HERO BAND ── -->
+    <div class="hero-band">
+      <div class="hero-inner">
+
+        <!-- Profile photo — replace src with your photo path -->
+        <div class="hero-photo-ring">
+          <div class="hero-photo">
+            <img
+              src="Pictures/Mysefl/black!.jpg"
+              alt="Marthe Odonelle Njoya"
+              onerror="this.style.display='none';document.getElementById('pfb').style.display='flex'">
+            <div id="pfb" class="photo-fallback">MN</div>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <p class="hero-eyebrow" data-t="hero_eyebrow">The real me ✨</p>
+          <h1 class="hero-name">Marthe Odonelle<br><em>Njoya</em></h1>
+          <p class="hero-tagline" data-t="hero_tagline">Born in Cameroon · Built in tech · Driven by purpose</p>
+          <div class="hero-badges">
+            <span class="hb hb-blue"  data-t="hb1">🎨 Creative</span>
+            <span class="hb hb-pink"  data-t="hb2">🌍 Bilingual</span>
+            <span class="hb hb-coral" data-t="hb3">🚀 Builder</span>
+            <span class="hb hb-teal"  data-t="hb4">❤️ Caregiver</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat"><span class="snum">2016</span><span class="slbl" data-t="stat_moved">Moved to USA</span></div>
+        <div class="hstat"><span class="snum">5+</span><span class="slbl"   data-t="stat_roles">Roles held</span></div>
+        <div class="hstat"><span class="snum">14+</span><span class="slbl"  data-t="stat_dest">Dream destinations</span></div>
+        <div class="hstat"><span class="snum">3</span><span class="slbl"    data-t="stat_proj">Projects built</span></div>
+      </div>
+    </div>
+
+    <!-- ── MAIN CONTENT ── -->
+    <div class="card-content">
+
+      <!-- ── PHOTOS ── -->
+      <section class="cs" id="photos">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-pink" data-t="photos_eyebrow">My photos</p>
+          
+        </div>
+        <div class="photo-uploads">
+
+          <!-- Profile photo slot (round) -->
+          <div class="pu-slot">
+            <div class="pu-round">
+              <!--
+                TO ADD YOUR PROFILE PHOTO:
+                Replace the img src below with your photo path or URL.
+                Example: src="./my_photo.jpg" or src="https://example.com/photo.jpg"
+                This photo also appears in the hero circle above.
+              -->
+              <img src="Pictures/Mysefl/Black2.jpg" alt="Profile"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="pu-empty-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                <span data-t="photo_profile_hint">Profile photo</span>
+              </div>
+            </div>
+            <span class="pu-lbl" data-t="photo_profile_lbl">Round · hero</span>
+          </div>
+
+          <!-- Portrait photo slot (tall) -->
+          <div class="pu-slot">
+            <div class="pu-portrait">
+              <!--
+                TO ADD YOUR PORTRAIT PHOTO:
+                Replace the img src below with your photo path or URL.
+              -->
+              <img src="Pictures/Mysefl/Grad.jpg"  alt="Portrait"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="pu-empty-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7 21v-1a5 5 0 0 1 10 0v1"/></svg>
+                <span data-t="photo_portrait_hint">Portrait photo</span>
+              </div>
+            </div>
+            <span class="pu-lbl" data-t="photo_portrait_lbl">Tall · formal</span>
+          </div>
+
+          <!-- Action / fun photo slot (wide) -->
+          <div class="pu-slot">
+            <div class="pu-wide">
+              <!--
+                TO ADD YOUR FUN/ACTION PHOTO:
+                Replace the img src below with your photo path or URL.
+              -->
+              <img src="Pictures/Mysefl/art.jpg"  alt="Fun photo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="pu-empty-overlay">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <span data-t="photo_fun_hint">Action / fun photo</span>
+              </div>
+            </div>
+            <span class="pu-lbl" data-t="photo_fun_lbl">Wide · casual</span>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="sec-divider"></div>
+
+      <!-- ── STORY ── -->
+      <section class="cs" id="story">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-blue" data-t="story_eyebrow">My story</p>
+          <h2 class="cs-title" data-t="story_title">From Cameroon to code</h2>
+        </div>
+        <div class="story-block">
+
+          <div class="si">
+            <div class="si-left">
+              <span class="si-icon ico-blue">🌍</span>
+              <div class="si-line"></div>
+            </div>
+            <div class="si-body">
+              <h3 data-t="sc1_title">The beginning</h3>
+              <p data-t="sc1_body">Born in Cameroon, I moved to the United States in 2016 and continued my education through high school and college. I never imagined I would end up in tech.I first saw myself as a <strong>laboratory technician</strong> in healthcare.</p>
+            </div>
+          </div>
+
+          <div class="si">
+            <div class="si-left">
+              <span class="si-icon ico-pink">💡</span>
+              <div class="si-line"></div>
+            </div>
+            <div class="si-body">
+              <h3 data-t="sc2_title">The pivot</h3>
+              <p data-t="sc2_body">In my final year of high school, I chose to explore technology. That led me going to <strong>Century College</strong> for Computer Information Technology, then to <strong>Metropolitan State University</strong>.switching from Computer Science to IT, which aligned far better with my strengths.</p>
+            </div>
+          </div>
+
+          <div class="si">
+            <div class="si-left">
+              <span class="si-icon ico-coral">🚀</span>
+              <div class="si-line"></div>
+            </div>
+            <div class="si-body">
+              <h3 data-t="sc3_title">Building things</h3>
+              <p data-t="sc3_body">I built real projects: <strong>TeamUp</strong>, <strong>CampusTrade</strong>, and <strong>EduLion</strong>,a bilingual school management platform for Cameroon, because technology must solve real problems for real communities.</p>
+            </div>
+          </div>
+
+          <div class="si last">
+            <div class="si-left">
+              <span class="si-icon ico-teal">🤝</span>
+            </div>
+            <div class="si-body">
+              <h3 data-t="sc4_title">Beyond the screen</h3>
+              <p data-t="sc4_body">I have worked as a caregiver, Walmart stocker, reading tutor with Ampact, childcare provider, and IT intern. Every role built patience, adaptability, and the ability to connect with people from all walks of life.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="sec-divider"></div>
+
+      <!-- ── HOBBIES ── -->
+      <section class="cs" id="hobbies">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-blue" data-t="hobbies_eyebrow">Outside of tech</p>
+          <h2 class="cs-title" data-t="hobbies_title">What lights me up</h2>
+        </div>
+        <div class="hobbies-grid">
+          <div class="hob-item"><span class="hob-emoji">🎵</span><span class="hob-lbl" data-t="hob1">Music &amp; Dance</span></div>
+          <div class="hob-item"><span class="hob-emoji">🍳</span><span class="hob-lbl" data-t="hob2">Trying new food</span></div>
+          <div class="hob-item"><span class="hob-emoji">✈️</span><span class="hob-lbl" data-t="hob3">Travel</span></div>
+          <div class="hob-item"><span class="hob-emoji">⚽</span><span class="hob-lbl" data-t="hob4">Sports</span></div>
+          <div class="hob-item"><span class="hob-emoji">🎨</span><span class="hob-lbl" data-t="hob5">Art &amp; Ceramics</span></div>
+          <div class="hob-item"><span class="hob-emoji">📷</span><span class="hob-lbl" data-t="hob6">Photography</span></div>
+          <div class="hob-item"><span class="hob-emoji">🏺</span><span class="hob-lbl" data-t="hob7">DIY &amp; Crafts</span></div>
+          <div class="hob-item"><span class="hob-emoji">👨‍👩‍👧</span><span class="hob-lbl" data-t="hob8">Family</span></div>
+        </div>
+      </section>
+
+      <div class="sec-divider"></div>
+
+      <!-- ── WORK ── -->
+      <section class="cs" id="work">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-pink" data-t="work_eyebrow">Work journey</p>
+          <h2 class="cs-title" data-t="work_title">Every role shaped me</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-spine"></div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-blue"></div>
+            <div class="tl-row">
+              <span class="tl-ico">💻</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j1t">IT / Helpdesk Support Intern</span>
+                <span class="tl-org">Minnesota Children's Museum · 2025–Present</span>
+              </div>
+              <span class="tl-tag tag-blue" data-t="j1g">Current</span>
+            </div>
+            <p class="tl-desc" data-t="j1d">Troubleshooting hardware, software, touchscreen displays and network issues. Documenting recurring problems and improving internal support processes.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-pink"></div>
+            <div class="tl-row">
+              <span class="tl-ico">⚡</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j2t">Technology Coordinator</span>
+                <span class="tl-org">ACR Homes · 2024–2025</span>
+              </div>
+              <span class="tl-tag tag-pink" data-t="j2g">Automation</span>
+            </div>
+            <p class="tl-desc" data-t="j2d">Built automated workflows with Power Automate, designed reporting dashboards, and trained caregivers to adopt unified tools across the organization.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-coral"></div>
+            <div class="tl-row">
+              <span class="tl-ico">📖</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j3t">Reading Tutor — Ampact Reading Corps</span>
+                <span class="tl-org">Ampact · Volunteer Program</span>
+              </div>
+              <span class="tl-tag tag-coral" data-t="j3g">Education</span>
+            </div>
+            <p class="tl-desc" data-t="j3d">Worked one-on-one with early readers, building patience, communication skills, and the genuine joy of helping someone learn something new.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-teal"></div>
+            <div class="tl-row">
+              <span class="tl-ico">🛒</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j4t">Customer Service &amp; Stocker</span>
+                <span class="tl-org">Walmart</span>
+              </div>
+              <span class="tl-tag tag-teal" data-t="j4g">Retail</span>
+            </div>
+            <p class="tl-desc" data-t="j4d">Served a diverse customer base daily, managed stock, and developed strong communication, adaptability, and teamwork skills on the floor.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-pink"></div>
+            <div class="tl-row">
+              <span class="tl-ico">❤️</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j5t">Caregiver</span>
+                <span class="tl-org">ACR Homes &amp; Private families</span>
+              </div>
+              <span class="tl-tag tag-pink" data-t="j5g">Healthcare</span>
+            </div>
+            <p class="tl-desc" data-t="j5d">Provided compassionate care to individuals with disabilities. Built empathy, patience, responsibility and a deep respect for every person's dignity.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot d-plum"></div>
+            <div class="tl-row">
+              <span class="tl-ico">🧸</span>
+              <div class="tl-meta">
+                <span class="tl-title" data-t="j6t">Childcare &amp; Babysitting</span>
+                <span class="tl-org">Various families</span>
+              </div>
+              <span class="tl-tag tag-plum" data-t="j6g">Childcare</span>
+            </div>
+            <p class="tl-desc" data-t="j6d">Cared for children across age groups,developed creativity, reliability, and the ability to connect meaningfully with people of all ages.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="sec-divider"></div>
+
+      <!-- ── TRAVEL ── -->
+      <section class="cs" id="travel">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-blue" data-t="travel_eyebrow">Bucket list ✈️</p>
+          <h2 class="cs-title" data-t="travel_title">Places I dream of visiting</h2>
+        </div>
+        <div class="travel-grid">
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=300&h=300&fit=crop&auto=format&q=70" alt="Paris" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇫🇷</span><span class="tc-name" data-t="tr1">Paris</span></div>
+            </div>
+            <span class="tc-lbl">France</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=300&h=300&fit=crop&auto=format&q=70" alt="Japan" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇯🇵</span><span class="tc-name" data-t="tr2">Japan</span></div>
+            </div>
+            <span class="tc-lbl">&amp; Korea</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=300&h=300&fit=crop&auto=format&q=70" alt="China" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇨🇳</span><span class="tc-name" data-t="tr3">China</span></div>
+            </div>
+            <span class="tc-lbl">Great Wall</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=300&fit=crop&auto=format&q=70" alt="Bali" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🌴</span><span class="tc-name" data-t="tr4">Bali</span></div>
+            </div>
+            <span class="tc-lbl">&amp; Maldives</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=300&h=300&fit=crop&auto=format&q=70" alt="Kenya" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🦁</span><span class="tc-name" data-t="tr5">Kenya</span></div>
+            </div>
+            <span class="tc-lbl">&amp; Tanzania</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=300&h=300&fit=crop&auto=format&q=70" alt="Cameroon" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇨🇲</span><span class="tc-name" data-t="tr6">Cameroon</span></div>
+            </div>
+            <span class="tc-lbl">Home 🏡</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300&h=300&fit=crop&auto=format&q=70" alt="Dubai" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🌆</span><span class="tc-name" data-t="tr7">Dubai</span></div>
+            </div>
+            <span class="tc-lbl">&amp; UK</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1533165168688-8de29899db82?w=300&h=300&fit=crop&auto=format&q=70" alt="Italy" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇮🇹</span><span class="tc-name" data-t="tr8">Italy</span></div>
+            </div>
+            <span class="tc-lbl">Amalfi Coast</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1589979481223-deb893043163?w=300&h=300&fit=crop&auto=format&q=70" alt="Seychelles" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🌊</span><span class="tc-name" data-t="tr9">Seychelles</span></div>
+            </div>
+            <span class="tc-lbl">&amp; Tanzania</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=300&h=300&fit=crop&auto=format&q=70" alt="Canada" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🍁</span><span class="tc-name" data-t="tr10">Canada</span></div>
+            </div>
+            <span class="tc-lbl">Banff</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=300&h=300&fit=crop&auto=format&q=70" alt="Ethiopia" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇪🇹</span><span class="tc-name" data-t="tr11">Ethiopia</span></div>
+            </div>
+            <span class="tc-lbl">East Africa</span>
+          </div>
+
+          <div class="tc-item">
+            <div class="tc-circle">
+              <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=300&h=300&fit=crop&auto=format&q=70" alt="Cote dIvoire" loading="lazy">
+              <div class="tc-overlay"><span class="tc-flag">🇨🇮</span><span class="tc-name" data-t="tr12">Côte d'Ivoire</span></div>
+            </div>
+            <span class="tc-lbl">West Africa</span>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="sec-divider"></div>
+
+      <!-- ── FACTS ── -->
+      <section class="cs" id="facts">
+        <div class="cs-header">
+          <p class="cs-eyebrow eyebrow-pink" data-t="facts_eyebrow">Fun facts</p>
+          <h2 class="cs-title" data-t="facts_title">A few more things about me</h2>
+        </div>
+        <div class="facts-list">
+          <div class="fact-row"><span class="fdot fdot-blue"></span><p data-t="f1">Originally planned to be a healthcare <strong>laboratory technician</strong> but  tech found me instead</p></div>
+          <div class="fact-row"><span class="fdot fdot-pink"></span><p data-t="f2">Bilingual in <strong>English and French</strong>: I grew up speaking French, mastered English after moving to the US in 2016</p></div>
+          <div class="fact-row"><span class="fdot fdot-coral"></span><p data-t="f3">Switched from <strong>Computer Science to IT</strong> mid-degree: knowing what fits you is a superpower</p></div>
+          <div class="fact-row"><span class="fdot fdot-teal"></span><p data-t="f4">Makes <strong>ceramics, DIY projects and paintings</strong> by hand:creating with my hands keeps me grounded away from screens</p></div>
+          <div class="fact-row"><span class="fdot fdot-blue"></span><p data-t="f5">Built <strong>EduLion</strong> to help communities like the ones back home in Cameroon: tech with real purpose</p></div>
+          <div class="fact-row"><span class="fdot fdot-pink"></span><p data-t="f6"><strong>Phi Theta Kappa</strong> honor society member · 3.70 GPA at Century College · proud of every single step</p></div>
+        </div>
+      </section>
+
+    </div><!-- /card-content -->
+
+    <!-- ── QUOTE BAND ── -->
+    <div class="quote-band">
+      <div class="quote-bar"></div>
+      <blockquote data-t="qt">"I see myself as someone who is continuously learning, building, and exploring new opportunities both in technology and in life."</blockquote>
+      <p class="quote-author" data-t="qa"> Marthe Odonelle Njoya</p>
+    </div>
+
+    <!-- ── CARD FOOTER ── -->
+    <div class="card-footer">
+      <span data-t="ft">Made with ♥ by Marthe Odonelle Njoya · St. Paul, MN · 2025</span>
+      <a href="index.html" data-t="fl">← View full portfolio</a>
+    </div>
+
+  </div><!-- /big-card -->
+
+<script>
+const T = {
+  en: {
+    nav_back:"Back to Portfolio", nav_photos:"Photos", nav_story:"Story",
+    nav_hobbies:"Hobbies", nav_work:"Work", nav_travel:"Travel", nav_facts:"Facts",
+    hero_eyebrow:"The real me ✨",
+    hero_tagline:"Born in Cameroon · Built in tech · Driven by purpose",
+    hb1:"🎨 Creative", hb2:"🌍 Bilingual", hb3:"🚀 Builder", hb4:"❤️ Caregiver",
+    stat_moved:"Moved to USA", stat_roles:"Roles held",
+    stat_dest:"Dream destinations", stat_proj:"Projects built",
+    photos_eyebrow:"My photos", photos_title:"Add your photos",
+    photo_profile_hint:"Profile photo", photo_profile_lbl:"Round · hero",
+    photo_portrait_hint:"Portrait photo", photo_portrait_lbl:"Tall · formal",
+    photo_fun_hint:"Action / fun photo", photo_fun_lbl:"Wide · casual",
+    photo_note_title:"How to add your photos",
+    photo_note_body:"Open Mystory.html and replace each src=\"./filename.jpg\" with your own image path or URL. Your profile photo also updates the hero circle above.",
+    story_eyebrow:"My story", story_title:"From Cameroon to code",
+    sc1_title:"The beginning",
+    sc1_body:"Born in Cameroon, I moved to the United States in 2016 and continued my education through high school and college. I never imagined I would end up in tech.I first saw myself as a laboratory technician in healthcare.",
+    sc2_title:"The pivot",
+    sc2_body:"In my final year of high school, I chose to explore technology. That led me to Century College for Computer Information Technology, then to Metropolitan State University,switching from Computer Science to IT, which aligned far better with my strengths.",
+    sc3_title:"Building things",
+    sc3_body:"I built real projects: TeamUp, CampusTrade, and EduLion a bilingual school management platform for Cameroon and Africa, because technology must solve real problems for real communities.",
+    sc4_title:"Beyond the screen",
+    sc4_body:"I have worked as a caregiver, Walmart stocker, reading tutor with Ampact, childcare provider, and IT intern. Every role built patience, adaptability, and the ability to connect with people from all walks of life.",
+    hobbies_eyebrow:"Outside of tech", hobbies_title:"What lights me up",
+    hob1:"Music & Dance", hob2:"discover new foods", hob3:"Travel", hob4:"Sports",
+    hob5:"Art & Ceramics", hob6:"Photography", hob7:"DIY & Crafts", hob8:"Family",
+    work_eyebrow:"Work journey", work_title:"Every role shaped me",
+    j1t:"IT / Helpdesk Support Intern", j1g:"Current",
+    j1d:"Troubleshooting hardware, software, touchscreen displays and network issues. Documenting recurring problems and improving internal support processes.",
+    j2t:"Technology Coordinator", j2g:"Automation",
+    j2d:"Built automated workflows with Power Automate, designed reporting dashboards, and trained caregivers to adopt unified tools across the organization.",
+    j3t:"Reading Tutor — Ampact Reading Corps", j3g:"Education",
+    j3d:"Worked one-on-one with early readers, building patience, communication skills, and the genuine joy of helping someone learn.",
+    j4t:"Customer Service & Stocker", j4g:"Retail",
+    j4d:"Served a diverse customer base daily, managed stock, and developed strong communication, adaptability, and teamwork skills.",
+    j5t:"Caregiver", j5g:"Healthcare",
+    j5d:"Provided compassionate care to individuals with disabilities. Built empathy, patience, and a deep respect for every person's dignity.",
+    j6t:"Childcare & Babysitting", j6g:"Childcare",
+    j6d:"Cared for children across age groups: creativity, reliability, and the ability to connect meaningfully with people of all ages.",
+    travel_eyebrow:"Bucket list ✈️", travel_title:"Places I dream of visiting",
+    tr1:"Paris", tr2:"Japan", tr3:"China", tr4:"Bali", tr5:"Kenya",
+    tr6:"Cameroon", tr7:"Dubai", tr8:"Italy", tr9:"Seychelles",
+    tr10:"Canada", tr11:"Ethiopia", tr12:"Côte d'Ivoire",
+    facts_eyebrow:"Fun facts", facts_title:"A few more things about me",
+    f1:"Originally planned to be a healthcare laboratory technician: tech found me instead",
+    f2:"Bilingual in English and French: grew up speaking French, mastered English after moving to the US",
+    f3:"Switched from Computer Science to IT mid-degree: knowing what fits you is a superpower",
+    f4:"Makes ceramics, DIY projects and paintings by hand: creating with my hands keeps me grounded",
+    f5:"Built EduLion to help communities like the ones back home in Cameroon tech with real purpose",
+    f6:"Phi Theta Kappa honor society member · 3.70 GPA at Century College · proud of every step",
+    qt:'"I see myself as someone who is continuously learning, building, and exploring new opportunities both in technology and in life."',
+    qa:"Marthe Odonelle Njoya",
+    ft:"Made with ♥ by Marthe Odonelle Njoya · St. Paul, MN · 2025",
+    fl:"← View full portfolio"
+  },
+  fr: {
+    nav_back:"Retour au portfolio", nav_photos:"Photos", nav_story:"Histoire",
+    nav_hobbies:"Loisirs", nav_work:"Travail", nav_travel:"Voyages", nav_facts:"Anecdotes",
+    hero_eyebrow:"La vraie moi ✨",
+    hero_tagline:"Née au Cameroun · Formée en tech · Guidée par un but",
+    hb1:"🎨 Créative", hb2:"🌍 Bilingue", hb3:"🚀 Bâtisseuse", hb4:"❤️ Soignante",
+    stat_moved:"Arrivée aux USA", stat_roles:"Rôles occupés",
+    stat_dest:"Destinations rêvées", stat_proj:"Projets construits",
+    photos_eyebrow:"Mes photos", photos_title:"Ajouter vos photos",
+    photo_profile_hint:"Photo de profil", photo_profile_lbl:"Ronde · héro",
+    photo_portrait_hint:"Photo portrait", photo_portrait_lbl:"Verticale · formelle",
+    photo_fun_hint:"Photo action / fun", photo_fun_lbl:"Horizontale · décontractée",
+    photo_note_title:"Comment ajouter vos photos",
+    photo_note_body:"Ouvrez Mystory.html et remplacez chaque src=\"./nom_fichier.jpg\" par votre propre chemin ou URL. La photo de profil met aussi à jour le cercle en haut de la page.",
+    story_eyebrow:"Mon histoire", story_title:"Du Cameroun au code",
+    sc1_title:"Le début",
+    sc1_body:"Née au Cameroun, j'ai déménagé aux États-Unis en 2016 et poursuivi mes études. Je ne m'imaginais pas dans la tech,je me voyais plutôt comme technicienne de laboratoire en santé.",
+    sc2_title:"Le tournant",
+    sc2_body:"En dernière année de lycée, j'ai décidé d'explorer la technologie. Ce choix m'a menée à Century College, puis à Metropolitan State University ,où j'ai changé de l'informatique vers l'IT.",
+    sc3_title:"Construire",
+    sc3_body:"J'ai créé des projets concrets : TeamUp, CampusTrade, et EduLion une plateforme bilingue pour le Cameroun et l'Afrique, parce que la technologie doit résoudre de vrais problèmes.",
+    sc4_title:"Au-delà de l'écran",
+    sc4_body:"J'ai travaillé comme aide-soignante, caissière chez Walmart, tutrice en lecture avec Ampact, garde d'enfants et stagiaire IT. Chaque rôle m'a forgé patience et adaptabilité.",
+    hobbies_eyebrow:"En dehors de la tech", hobbies_title:"Ce qui m'anime",
+    hob1:"Musique & Danse", hob2:"Decouvrir de nouveaux plats", hob3:"Voyages", hob4:"Sport",
+    hob5:"Art & Céramique", hob6:"Photographie", hob7:"DIY & Créations", hob8:"Famille",
+    work_eyebrow:"Parcours professionnel", work_title:"Chaque rôle m'a façonnée",
+    j1t:"Stagiaire IT / Helpdesk", j1g:"En cours",
+    j1d:"Dépannage matériel, logiciel, écrans tactiles et réseau. Documentation des incidents et amélioration des processus de support.",
+    j2t:"Coordinatrice Technologique", j2g:"Automatisation",
+    j2d:"Création de flux Power Automate, tableaux de bord de reporting et formation des soignants à l'adoption d'outils unifiés.",
+    j3t:"Tutrice en lecture — Ampact Reading Corps", j3g:"Éducation",
+    j3d:"Travail individuel avec de jeunes lecteurs, développant patience, communication et la joie d'aider quelqu'un à apprendre.",
+    j4t:"Service client & Mise en rayon", j4g:"Commerce",
+    j4d:"Service quotidien d'une clientèle diverse, gestion des stocks, développement de solides compétences en communication.",
+    j5t:"Aide-soignante", j5g:"Santé",
+    j5d:"Soins bienveillants à des personnes en situation de handicap. Développement de l'empathie, de la patience et d'un profond respect pour la dignité humaine.",
+    j6t:"Garde d'enfants & Baby-sitting", j6g:"Garde",
+    j6d:"Prise en charge d'enfants de différents âges: créativité, fiabilité et la capacité de se connecter avec des personnes de tout âge.",
+    travel_eyebrow:"Liste de rêves ✈️", travel_title:"Les endroits que je rêve de visiter",
+    tr1:"Paris", tr2:"Japon", tr3:"Chine", tr4:"Bali", tr5:"Kenya",
+    tr6:"Cameroun", tr7:"Dubaï", tr8:"Italie", tr9:"Seychelles",
+    tr10:"Canada", tr11:"Éthiopie", tr12:"Côte d'Ivoire",
+    facts_eyebrow:"Anecdotes", facts_title:"Quelques choses de plus sur moi",
+    f1:"Prévoyait de devenir technicienne de laboratoire en santé:la tech m'a trouvée à la place",
+    f2:"Bilingue anglais-français: grandie en français, l'anglais maîtrisé après l'arrivée aux États-Unis",
+    f3:"Changé de l'informatique à l'IT en cours de licence :savoir ce qui vous convient est une vraie force",
+    f4:"Fait de la céramique, des projets DIY et de la peinture:créer avec mes mains m'ancre loin des écrans",
+    f5:"Construit EduLion pour aider des communautés comme celles de chez moi au Cameroun",
+    f6:"Membre de Phi Theta Kappa · GPA 3,70 à Century College · fière de chaque étape du chemin",
+    qt:'"Je me vois comme quelqu\'un qui apprend, construit et explore continuellement de nouvelles opportunités en technologie et dans la vie."',
+    qa:"Marthe Odonelle Njoya",
+    ft:"Fait avec ♥ par Marthe Odonelle Njoya · St. Paul, MN · 2025",
+    fl:"← Voir le portfolio complet"
+  }
+};
+
+let lang = 'en';
+function setLang(l, btn) {
+  lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.documentElement.lang = l;
+  applyT();
+}
+function applyT() {
+  const t = T[lang];
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const k = el.getAttribute('data-t');
+    if (t[k] !== undefined) el.textContent = t[k];
+  });
+}
+
+/* scroll fade-in */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.04 });
+document.querySelectorAll('.cs').forEach(el => io.observe(el));
+
+applyT();
+</script>
+</body>
+</html>
