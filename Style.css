@@ -48,7 +48,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--body);
-  font-size: 1.5; /* changed: easier to read */
+  font-size: 1rem; /* changed: easier to read */
   line-height: 1.75;
   overflow-x: hidden;
 }
