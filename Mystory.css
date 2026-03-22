@@ -880,3 +880,180 @@ blockquote {
     gap: 1.5rem;
   }
 }
+/* =========================================================
+   CLEAN SIZE OVERRIDE — MYSTORY PAGE
+   Paste at the very bottom of Mystory.css
+   ========================================================= */
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  padding: 0 1rem 3rem !important;
+}
+
+/* Top nav */
+.top-nav {
+  padding: 0.9rem 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.back-btn {
+  font-size: 0.98rem !important;
+  gap: 0.45rem !important;
+}
+
+.nav-right {
+  gap: 0.8rem !important;
+}
+
+.nav-links a {
+  font-size: 0.95rem !important;
+  padding: 0.45rem 0.75rem !important;
+}
+
+.lang-btn {
+  font-size: 0.9rem !important;
+  padding: 0.4rem 0.75rem !important;
+}
+
+/* Main card */
+.big-card {
+  border-width: 3px !important;
+}
+
+/* Hero section */
+.hero-inner {
+  gap: 1.5rem !important;
+  padding: 2rem 1.5rem 1.6rem !important;
+}
+
+.hero-photo {
+  width: 250px !important;
+  height: 280px !important;
+}
+
+.hero-eyebrow {
+  font-size: 0.9rem !important;
+  letter-spacing: 0.08em !important;
+}
+
+.hero-name {
+  font-size: clamp(1.8rem, 3vw, 2.6rem) !important;
+  line-height: 1.12 !important;
+}
+
+.hero-tagline {
+  font-size: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.hb {
+  font-size: 0.9rem !important;
+  padding: 0.45rem 0.85rem !important;
+}
+
+/* Stats */
+.hstat {
+  padding: 1rem !important;
+}
+
+.snum {
+  font-size: 1.2rem !important;
+}
+
+.slbl {
+  font-size: 0.82rem !important;
+}
+
+/* Section headings */
+.cs-eyebrow,
+.tc-lbl,
+.hob-lbl {
+  font-size: 0.9rem !important;
+}
+
+.cs-title {
+  font-size: clamp(1.45rem, 2.5vw, 2rem) !important;
+}
+
+.si-body h3,
+.tl-title {
+  font-size: 1.1rem !important;
+}
+
+.si-body p,
+.tl-desc,
+.fact-row p {
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+.tl-org {
+  font-size: 0.9rem !important;
+}
+
+.tl-tag {
+  font-size: 0.82rem !important;
+}
+
+/* Quote */
+blockquote {
+  font-size: clamp(1.2rem, 2vw, 1.8rem) !important;
+  line-height: 1.55 !important;
+}
+
+.quote-author,
+.card-footer span,
+.card-footer a {
+  font-size: 0.92rem !important;
+}
+
+/* Cards and spacing */
+.story-item,
+.fact-card,
+.timeline-card,
+.quote-card,
+.hobby-card,
+.touch-card {
+  padding: 1rem !important;
+  border-radius: 16px !important;
+}
+
+section {
+  margin-bottom: 1.2rem !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.98rem !important;
+  }
+
+  .hero-inner {
+    padding: 1.5rem 1rem !important;
+    gap: 1rem !important;
+  }
+
+  .hero-photo {
+    width: 200px !important;
+    height: 220px !important;
+  }
+
+  .hero-name {
+    font-size: 1.7rem !important;
+  }
+
+  .nav-links a,
+  .back-btn,
+  .lang-btn {
+    font-size: 0.9rem !important;
+  }
+
+  .cs-title {
+    font-size: 1.4rem !important;
+  }
+}
