@@ -54,7 +54,7 @@ body {
   color: var(--text);
   overflow-x: hidden;
   line-height: 1.75;
-  font-size: 1rem; /* bigger base */
+  font-size: .5rem; /* bigger base */
   padding:  0 1rem 3rem ;
 }
 
@@ -890,7 +890,7 @@ html {
 }
 
 body {
-  font-size: 1rem !important;
+  font-size: .5rem !important;
   line-height: 1.7 !important;
   padding: 0 1rem 3rem !important;
 }
