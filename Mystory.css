@@ -55,7 +55,7 @@ body {
   overflow-x: hidden;
   line-height: 1.75;
   font-size: 1rem; /* bigger base */
-  padding: 0 1.5rem 4rem;
+  padding:  0 1rem 3rem ;
 }
 
 ::-webkit-scrollbar { width: 18px; }
